@@ -1,4 +1,23 @@
 ---
 layout: default
 title: A Survey of Non-functional Optimizationfor Mobile Applications
+description: A list of research papers for non-functional optimisation of mobile applications.
 ---
+
+<table id="allPapers">
+<thead><th>Year</th><th>Title</th><th>Authors</th><th>Venue</th><th>Abstract</th></thead><tbody>
+{% assign publicationsByYear = site.publications | sort: "year" | group_by: "year" %}
+{% for year in publicationsByYear reversed %}
+{% for publication in year.items %}
+<tr>
+	<td>{{ publication.year }}</td>
+	<td><a href="{{ publication.url | prepend: site.baseurl }}">{{publication.title}}</a>
+	</td>
+	<td>{{ publication.authors }}</td>
+	<td>{{ publication.conference }}</td>
+	<td>{{ publication.content }}</td>
+	<td>{% for tag in publication.tags %}{{ tag }} {% endfor %}</td>
+</tr>
+{% endfor %}
+{% endfor %}
+</tbody></table>
