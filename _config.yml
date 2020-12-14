@@ -5,6 +5,14 @@ description:         'Research on non-functional characteristics of mobile appli
 url:                 http://solar.cs.ucl.ac.uk/appoptimization.github.io/
 baseurl:             ''
 
-plugins:
-  - jekyll-paginate
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:path/
+
+plugins_dir:
   - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+    style: compressed
