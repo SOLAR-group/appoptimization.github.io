@@ -4,3 +4,7 @@ tagline:             'a living literature review'
 description:         'Research on non-functional characteristics of mobile applications.'
 url:                 http://solar.cs.ucl.ac.uk/appoptimization.github.io/
 baseurl:             ''
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
