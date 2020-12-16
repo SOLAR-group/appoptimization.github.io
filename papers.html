@@ -27,6 +27,15 @@ the following list of the existing papers.
 
 <script>
 $(document).ready(function(){
-    $('#allPapers').dataTable();
+    datatable = $('#allPapers').DataTable({
+		paging: false,
+		"order": [[ 0, 'desc' ], [ 1, 'asc' ]],
+		columnDefs: [
+			{
+				targets: [3, 4, 5],
+				visible: false,
+				searchable: true
+			}]
+		});
 });
 </script>
