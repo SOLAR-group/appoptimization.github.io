@@ -22,3 +22,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           publish_branch: master
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+          python-version: '3.7'
+          architecture: x64  
