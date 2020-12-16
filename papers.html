@@ -26,16 +26,9 @@ the following list of the existing papers.
 </tbody></table>
 
 <script>
-$(document).ready(function(){
-    datatable = $('#allPapers').DataTable({
-		paging: false,
-		"order": [[ 0, 'desc' ], [ 1, 'asc' ]],
-		columnDefs: [
-			{
-				targets: [3, 4, 5],
-				visible: false,
-				searchable: true
-			}]
-		});
-});
+$(document).ready(function() {
+    $('#allPapers').DataTable( {
+        "pagingType": "full_numbers"
+    } );
+} );
 </script>
