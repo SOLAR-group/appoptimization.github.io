@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+ <ShortName>APPOPT</ShortName>
+ <Description>Search Papers in Non-Functional Optimisation of Mobile Applications.</Description>
+ <Tags>appopt</Tags>
+ <Url type="text/html"
+ <Image height="64" width="64" type="image/png">https://solar.cs.ucl.ac.uk/appoptimization.github.io/public/favicon.svg</Image>
+</OpenSearchDescription>
