@@ -29,8 +29,10 @@ the following list of the existing papers.
 var datatable;
 
 function searchTable() {
-    var hash = decodeURIComponent(window.location.hash.substr(1));
-    datatable.search(hash).draw();
+    var uri = "https://solar.cs.ucl.ac.uk/appoptimization.github.io/"
+    var uri_enc = encodeURIComponent(uri);
+    var uri_dec = decodeURIComponent(uri_enc);
+    datatable.search(uri_dec).draw();
 }
 
 
