@@ -6,5 +6,9 @@ layout: default
   <h1 class="page-title">{{ page.title }}</h1>
   <h5>{{ page.authors }}. {{ page.conference }} {{ page.year }}</h5>
   <p>
+    {% for tag in page.tags %}
+      <tag><a href="/tags.html#{{ tag }}">{{ tag }}</a></tag>
+    {% endfor %}
   </p>
+  <p>{{ content }}</p>
 </div>
