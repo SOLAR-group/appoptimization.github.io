@@ -26,4 +26,10 @@ jobs:
       uses: actions/setup-python@v2
       with:
           python-version: '3.7'
-          architecture: x64  
+          architecture: x64
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: master  
