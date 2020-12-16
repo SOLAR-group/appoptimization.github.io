@@ -1,8 +1,8 @@
 # Setup
 title:               A Survey of Non-functional Optimization for Mobile Applications
 tagline:             'a living literature review'
-description:         'Research on non-functional characteristics of mobile applications.'
-url:                 
+description:         'Research on non-functional characteristics of mobile applications'
+url:                 https://solar.cs.ucl.ac.uk/appoptimization.github.io/
 baseurl:             
 
 collections:
