@@ -26,33 +26,41 @@ the following list of the existing papers.
 </tbody></table>
 
 <script>
-var datatable;
-
-function searchTable() {
-    var uri = "https://solar.cs.ucl.ac.uk/appoptimization.github.io/"
-    var uri_enc = encodeURIComponent(uri);
-    var uri_dec = decodeURIComponent(uri_enc);
-    datatable.search(uri_dec).draw();
-}
-
-
-$(document).ready( function () {
-    datatable = $('#allPapers').DataTable({
-		paging: false,
-		"order": [[ 0, 'desc' ], [ 1, 'asc' ]],
-	    	"displayLength": 25,
-		"columnDefs": [
-			{
-				targets: [3, 4, 5],
-				visible: false,
-				searchable: true
-			}]
-		});
-    searchTable();
-});
-
-$(window).on('hashchange', function() {
-  searchTable();
-});
+$(document).ready(function() {
+    var groupColumn = 2;
+    var table = $('allPapers').DataTable({
+        "columnDefs": [
+            { "visible": false, "targets": groupColumn }
+        ],
+        "order": [[ groupColumn, 'asc' ]],
+        "displayLength": 25,
+        "drawCallback": function ( settings ) {
+            var api = this.api();
+            var rows = api.rows( {page:'current'} ).nodes();
+            var last=null;
+ 
+            api.column(groupColumn, {page:'current'} ).data().each( function ( group, i ) {
+                if ( last !== group ) {
+                    $(rows).eq( i ).before(
+                        '<tr class="group"><td colspan="5">'+group+'</td></tr>'
+                    );
+ 
+                    last = group;
+                }
+            } );
+        }
+    } );
+ 
+    // Order by the grouping
+    $('allPapers tbody').on( 'click', 'tr.group', function () {
+        var currentOrder = table.order()[0];
+        if ( currentOrder[0] === groupColumn && currentOrder[1] === 'asc' ) {
+            table.order( [ groupColumn, 'desc' ] ).draw();
+        }
+        else {
+            table.order( [ groupColumn, 'asc' ] ).draw();
+        }
+    } );
+} );
 	
 </script>
