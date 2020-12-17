@@ -3,7 +3,7 @@ layout: default
 title: A survey on non-functional characteristics of mobile applications
 ---
 
-### Non-functional application optimization
+### Non-functional Application Optimization
 
 The relevance of mobile (handheld) devices, such as the so-called smartphones,
 has been ever growing for the past 10 years
@@ -19,9 +19,16 @@ This website surveys the work on the emerging area of non-functional optimizatio
 In particular, performance characteristics of mobile applications include:
 _responsiveness_, _launch time_, _memory_, and _energy consumption_.
 
+### Goal
+
+The goal of this website is the development of a [living literature review](https://en.wikipedia.org/wiki/Living_review)
+in the area of non-functional optimization of mobile applications.
+This website allows the reader to explore, search, navigate, and update the literature
+in this research area.
+
 ### Contribution
 
 The research on non-functional application optimization is evolving fast.
-Therefore, we aim at making this website a [living literature review](https://en.wikipedia.org/wiki/Living_review).
-We encourage anyone to add a paper relevant to this web site,
+Therefore, we aim to keep this website as a living document.
+We encourage anyone to add papers relevant to this web site,
 by following [these instructions for contributing](https://solar.cs.ucl.ac.uk/appoptimization.github.io/contribution.html).
