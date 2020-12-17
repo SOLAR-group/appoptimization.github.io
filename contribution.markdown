@@ -33,3 +33,7 @@ Text of abstract goes here.
 </pre>
 
 The `additional_links` and the `abstract` are optional.
+
+### Commit a publication
+
+Please open a pull request [here](https://github.com/SOLAR-group/appoptimization.github.io) to commit your changes. Thank you!
