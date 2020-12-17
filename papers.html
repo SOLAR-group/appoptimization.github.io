@@ -17,7 +17,7 @@ the following list of the existing papers.
 {% for publication in year.items %}
 <tr>
 	<td>{{ publication.year }}</td>
-	<td>{{publication.title}}</td>
+	<td><a href="{{ publication.url | prepend: site.baseurl }}">{{publication.title}}</a></td>
 	<td>{{ publication.authors }}</td>
 	<td>{{ publication.conference }}</td>
 </tr>
