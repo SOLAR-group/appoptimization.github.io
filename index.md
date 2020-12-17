@@ -12,11 +12,12 @@ Smartphones can nowadays be considered as the main information processing device
 Even though mobile devices are powerful,
 they represent resource-constrained devices making the development of applications
 that can run on them (mobile applications) challenging.
+
 To ensure user satisfaction and success of mobile applications,
 it is important to provide highly performant applications.
 This website surveys the work on the emerging area of non-functional optimization for mobile applications.
 In particular, performance characteristics of mobile applications include:
-responsiveness, launch time, memory, and energy consumption.
+_responsiveness_, _launch time_, _memory_, and _energy consumption_.
 
 ### Contribution
 
