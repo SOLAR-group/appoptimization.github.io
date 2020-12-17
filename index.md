@@ -22,6 +22,6 @@ _responsiveness_, _launch time_, _memory_, and _energy consumption_.
 ### Contribution
 
 The research on non-functional application optimization is evolving fast.
-Therefore, we aim at making this website a living literature review.
+Therefore, we aim at making this website a [living literature review](https://en.wikipedia.org/wiki/Living_review).
 We encourage anyone to add a paper relevant to this web site,
 by following [these instructions for contributing](https://solar.cs.ucl.ac.uk/appoptimization.github.io/contribution.html).
