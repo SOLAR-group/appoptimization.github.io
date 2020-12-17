@@ -6,6 +6,10 @@ layout: default
   <h1 class="page-title">{{ page.title }}</h1>
   <h5>{{ page.authors }}. {{ page.conference }} {{ page.year }}</h5>
   <p>
+    {% for additional_link in page.additional_links %}
+      [<a href="{{ additional_link.url }}" target="_blank">{{ additional_link.name }}</a>]
+    {% endfor %}
+    <br/>
     {% for tag in page.tags %}
       <tag><a href="https://solar.cs.ucl.ac.uk/appoptimization.github.io/tags.html#{{ tag }}">{{ tag }}</a></tag>
     {% endfor %}
