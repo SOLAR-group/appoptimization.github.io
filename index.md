@@ -3,7 +3,7 @@ layout: default
 title: A survey on non-functional characteristics of mobile applications
 ---
 
-### Non-functional Application Optimization
+### A Survey of Non-functional Optimization for Mobile Applications
 
 The relevance of mobile (handheld) devices, such as the so-called smartphones,
 has been ever growing for the past 10 years
